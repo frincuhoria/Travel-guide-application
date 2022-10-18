@@ -1,0 +1,33 @@
+.cards {
+    padding: 1rem;
+    background: #fff;
+    z-index: 500;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+.grid-items {
+  margin-top: 30px;
+}
+
+.grid-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader-icon {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

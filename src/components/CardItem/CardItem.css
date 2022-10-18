@@ -1,0 +1,39 @@
+#card-style {
+    width: 400px;
+    max-width: 400px;
+}
+
+#card-style:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#card-title {
+    font-weight: bold;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-button {
+    background-color: antiquewhite;
+    color: #222831;
+    border-color: antiquewhite;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#card-image {
+    height: 260px;
+}
+
+

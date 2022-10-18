@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "title": "Straw Dogs",
-    "description": "deploy cross-platform convergence",
-    "rating": 1
+    "src": "/images/london.jpg",
+    "title": "Tower of London/St Paul's Cathedral Private Walking Tour In The Old City",
+    "path": "/products"
   },
   {
     "id": 2,
-    "title": "Red: Werewolf Hunter",
-    "description": "incentivize web-enabled synergies",
-    "rating": 2
+    "src": "/images/paris.jpg",
+    "title": "Enjoy the view of Paris, the guide or...a glass of wine at least!",
+    "path": "/products"
   },
   {
     "id": 3,
-    "title": "2 Fast 2 Furious (Fast and the Furious 2, The)",
-    "description": "productize viral functionalities",
-    "rating": 3
+    "src": "/images/rio.jpg",
+    "title": "Full Day in Rio: Christ the Redeemer, Sugarloaf, Maracana and Selaron with Lunch",
+    "path": "/products"
   },
   {
     "id": 4,
-    "title": "Three-Step Dance",
-    "description": "deliver visionary content",
-    "rating": 4
+    "src": "/images/egypt.jpg",
+    "title": "Tour of the Pyramids, Egyptian Museum and Bazaar from Cairo",
+    "path": "/products"
   },
   {
     "id": 5,
-    "title": "Liliom",
-    "description": "disintermediate compelling mindshare",
-    "rating": 5
+    "src": "/images/dubai.jpeg",
+    "title": "Discover Dubai",
+    "path": "/products"
   },
   {
     "id": 6,
-    "title": "Seven (a.k.a. Se7en)",
-    "description": "deploy enterprise technologies",
-    "rating": 6
+    "src": "/images/pisa.jpg",
+    "title": "Pisa miracle tour!",
+    "path": "/products"
   },
   {
     "id": 7,
-    "title": "Welcome to Mooseport",
-    "description": "strategize back-end content",
-    "rating": 7
+    "src": "/images/rome.jpg",
+    "title": "Rome walk of ages: a walk along 2000 years of history",
+    "path": "/products"
   },
   {
     "id": 8,
-    "title": "Drop Zone",
-    "description": "optimize extensible platforms",
-    "rating": 8
+    "src": "/images/budapest.jpg",
+    "title": "Budapest, as you like! The many sides of the Hungarian Capital",
+    "path": "/products"
   },
   {
     "id": 9,
-    "title": "12 Rounds",
-    "description": "extend transparent schemas",
-    "rating": 9
+    "src": "/images/cappadocia.jpg",
+    "title": "Intensive and Magical Cappadocia",
+    "path": "/products"
   },
   {
     "id": 10,
-    "title": "Young Bess",
-    "description": "innovate transparent partnerships",
-    "rating": 10
+    "src": "/images/athens.jpg",
+    "title": "Athens Half Day Shore Excursion Tour",
+    "path": "/products"
   }
 ]

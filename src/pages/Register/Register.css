@@ -1,0 +1,36 @@
+#card-container {
+    display: flex;
+    align-items: center;
+    background-color: #256D85;
+    border-radius: 0%;
+}
+
+#card-body-container {
+    background-color: #DFF6FF;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-container {
+    width: 400px;
+}
+
+#form-control-container {
+    margin-bottom: 10px;
+    background-color: #FAF7F0;
+    border-color: #256D85;
+}
+
+#button-login {
+    background-color: #0096FF;
+    border-color: #0096FF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#button-login:hover {
+    background-color: #1363DF;
+    border-color: #1363DF;
+}

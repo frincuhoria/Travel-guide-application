@@ -1,0 +1,40 @@
+.home-container {
+    background-image: url('/public/images/home-background.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 105% ;
+    height: 725px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -320px;
+}
+
+#btn-get-started {
+    height: 50px;
+    width: 170px;
+    font-size: larger;
+    font-weight: 500;
+    border: solid ;
+    background-color: #EEEEEE;
+    border-color: #393E46;
+    color: #393E46;
+}
+
+#btn-get-started:hover {
+    background-color: lightgray;
+    transition: 0.7s;
+    transform: scale(1.1,1.1);
+    color: white;
+}
+p {
+    font-weight: bold;
+    font-size: larger;
+}
