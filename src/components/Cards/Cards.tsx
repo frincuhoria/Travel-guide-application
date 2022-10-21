@@ -4,21 +4,30 @@ import { Grid, Button, Modal } from "@mantine/core";
 import { CreateTrip } from "../CreateTrip/CreateTrip";
 import { CardItem } from "../CardItem/CardItem";
 import { useCards } from "../../hooks/useCards";
+import mockTrips from "../../MOCK_DATA.json";
 import "./Cards.css";
+import { MockCard } from "../MockCard/MockCard";
 
 export const Cards = () => {
   const [opened, setOpened] = useState(false);
   const { cards, isError, isLoading } = useCards();
 
-  if(isError) {
+  if (isError) {
     return (
-      <h1>An error has occured</h1>
-    )
+      <div className="cards">
+        <h1>Check out the epic Destinations!</h1>
+        <Grid grow gutter="xl" className="grid-items">
+          {mockTrips.map((trip) => (
+            <Grid.Col span={4} key={trip.id} className="grid-col">
+              <MockCard trip={trip} />
+            </Grid.Col>
+          ))}
+        </Grid>
+      </div>
+    );
   }
-  if(isLoading) {
-    return (
-      <i className="fas fa-sync fa-spin" id="loader-icon"></i>
-    )
+  if (isLoading) {
+    return <i className="fas fa-sync fa-spin" id="loader-icon"></i>;
   }
 
   return (

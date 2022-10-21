@@ -3,10 +3,12 @@
     background: #fff;
     z-index: 500;
     margin-bottom: 30px;
+    margin-top: 15px;
   }
   
   h1 {
     text-align: center;
+    color: #393E46;
   }
 
 .grid-items {

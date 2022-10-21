@@ -24,11 +24,11 @@
 }
 
 #card-button {
-    background-color: antiquewhite;
+    background-color: #BBE1FA;
     color: #222831;
-    border-color: antiquewhite;
+    border-color: #BBE1FA;
     width: 100%;
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 10px;
 }
 

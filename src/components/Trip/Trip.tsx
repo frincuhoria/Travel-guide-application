@@ -1,4 +1,4 @@
-import { Loader, Text } from "@mantine/core";
+import { Text } from "@mantine/core";
 import { useParams } from "react-router-dom";
 import { useTrip } from "../../hooks/useTrip";
 import { TripDetails } from "./TripDetails";
@@ -8,7 +8,11 @@ export const Trip = () => {
   const { trip, isError, isLoading } = useTrip(uuid || "");
 
   if (isLoading || !trip) {
-    return <Loader color="violet" size="xl" variant="bars" />;
+    return (
+      <div style={{ height: "330px" }}>
+        <i className="fas fa-sync fa-spin" id="loader-icon"></i>
+      </div>
+    );
   }
 
   if (isError) {
@@ -21,11 +25,24 @@ export const Trip = () => {
   return (
     <div>
       <TripDetails trip={trip} />
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "10px",  }}>
-        <button type="button" className="btn btn-danger" style={{marginRight: "10px"}}>
+      <div
+        style={{
+          display: "flex",
+          margin: "20px 520px 20px 520px",
+        }}
+      >
+        <button
+          type="button"
+          className="btn btn-danger"
+          style={{ marginRight: "10px", width: "50%" }}
+        >
           Delete
         </button>
-        <button type="button" className="btn btn-warning">
+        <button
+          type="button"
+          className="btn btn-warning"
+          style={{ width: "50%" }}
+        >
           Update
         </button>
       </div>
