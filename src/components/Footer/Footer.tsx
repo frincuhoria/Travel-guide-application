@@ -7,7 +7,7 @@ export const Footer = () => {
         <div id="container-logo">
           <div>
             Travel
-            <i className="fa-solid fa-plane" style={{ color: "#71C9CE" }}></i>
+            <i className="fa-solid fa-plane" style={{ color: "#47B5FF" }}></i>
           </div>
           <div style={{ color: "#868e96", fontSize: "12px", marginTop: "2px" }}>
             You Can Do It When You Travel It
