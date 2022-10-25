@@ -23,7 +23,7 @@ export const NavigationBar = () => {
             <Nav.Link href="/products">Products</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
           </Nav>
-          <Button id="btn" href="/register">
+          <Button id="btn-register" href="/register">
             REGISTER
           </Button>
         </div>

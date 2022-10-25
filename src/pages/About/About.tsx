@@ -1,11 +1,16 @@
-import "./About.css";
-import mockValues from "../../MOCK_VALUES.json";
 import { Button } from "react-bootstrap";
-
-const scrollRight = () => {};
-const scrollLeft = () => {};
+import { useRef } from "react";
+import mockValues from "../../MOCK_VALUES.json";
+import "./About.css";
 
 export const About = () => {
+  const ref = useRef<HTMLInputElement>(null);
+  const scroll = (scrollOffset: number) => {
+    if (ref.current !== null) {
+      ref.current.scrollLeft += scrollOffset;
+    }
+  };
+
   return (
     <>
       <div className="container-about">
@@ -41,9 +46,11 @@ export const About = () => {
       </div>
       <div className="about-values">
         <div className="about-values-heading">
-          <h2 className="about-values-title">At Travel, our core values guide our evolution:</h2>
+          <h2 className="about-values-title">
+            At Travel, our core values guide our evolution:
+          </h2>
         </div>
-        <div className="about-values-cards">
+        <div className="about-values-cards" ref={ref}>
           {mockValues.map((value) => (
             <article className="about-values-cards-article">
               <div key={value.key} className="about-values-card">
@@ -53,10 +60,10 @@ export const About = () => {
           ))}
         </div>
         <div className="about-values-buttons">
-          <Button id="about-values-btn" onClick={scrollLeft}>
+          <Button id="about-values-btn" onClick={() => scroll(-840)}>
             <i className="fa-solid fa-angle-left"></i>
           </Button>
-          <Button id="about-values-btn" onClick={scrollRight}>
+          <Button id="about-values-btn" onClick={() => scroll(+840)}>
             <i className="fa-solid fa-angle-right"></i>
           </Button>
         </div>

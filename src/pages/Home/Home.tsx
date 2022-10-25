@@ -1,15 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./Home.css";
 
 export const Home = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  if (inputRef.current != null) {
-    inputRef.current.scrollIntoView({ behavior: "smooth" });
-  }
   const navigate = useNavigate();
-
   const handleClick = () => {
     navigate("/products");
   };
@@ -34,7 +29,6 @@ export const Home = () => {
           </button>
         </div>
       </div>
-      <div ref={inputRef}></div>
     </div>
   );
 };

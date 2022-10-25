@@ -64,6 +64,7 @@
 .about-values-cards {
   display: flex;
   overflow-x: scroll;
+  scroll-behavior: smooth;
   scrollbar-width: none; /*hide scrollbar for Firefox */
   -ms-overflow-style: none; /*hide scrollbar for IE and Edge */
   max-width: 1280px;
@@ -156,7 +157,7 @@
   }
 
   .about-values-buttons {
-    max-width: 1024px;
+    max-width: 1042px;
   }
 }
 
@@ -187,6 +188,10 @@
 
   .about-values-card {
     width: 180px;
+  }
+
+  .about-values-buttons {
+    max-width: 786px;
   }
 }
 
@@ -220,6 +225,33 @@
 
   .about-values-card {
     width: 500px;
+  }
+  .about-values-buttons {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 668px) {
+  .about-values {
+    margin: 0 auto;
+  }
+  .about-values-heading {
+    max-width: 375px;
+  }
+
+  .about-values-cards {
+    max-width: 375px;
+  }
+
+  .about-values-cards-article {
+    width: 90%;
+    height: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .about-values-card {
+    width: 230px;
   }
 
 }
